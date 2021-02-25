@@ -1,14 +1,12 @@
 #!/bin/ksh
-pathnam=/glade/scratch/`whoami`/cloud_vx/xml
-pathroc=/glade/u/home/harrop/opt/rocoto/1.2.4-p1
+pathnam=/glade/p/ral/jntp/CAF/cloud_vx/xml
+pathroc=/glade/p/ral/jntp/tools/rocoto/rocoto-1.3.1
 
 pwd
 
-cycle="201811010000"
-#task="grid_stat_MERRA2_lowCloudFrac_03"
-#task="point_stat_EPIC_Cloud_Mask_00"
-task="grid_stat_SATCORPS_totalCloudFrac_03"
+cycle="202007230000"
+task="grid_stat_SATCORPS_totalCloudFrac_06"
 
 ${pathroc}/bin/rocotocheck -w ${pathnam}/cloud_vx.xml -d ${pathnam}/cloud_vx.db -c ${cycle} -t ${task}
 
-#/glade/u/home/harrop/opt/rocoto/1.2.4-p1/bin/rocotocheck -w /glade/scratch/jwolff/CAF/met/draft_3rd/xml/cloud_vx.xml -d /glade/scratch/jwolff/CAF/met/draft_3rd/xml/cloud_vx.db -c 201811010000 -t grid_stat_MERRA2_lowCloudFrac_03
+#/glade/p/ral/jntp/tools/rocoto/rocoto-1.3.1/bin/rocotocheck -w /glade/p/ral/jntp/CAF/cloud_vx/xml/cloud_vx.xml -d /glade/p/ral/jntp/CAF/cloud_vx/xml/cloud_vx.db -v 10 -c 202007230000 -t grid_stat_SATCORPS_totalCloudFrac_06

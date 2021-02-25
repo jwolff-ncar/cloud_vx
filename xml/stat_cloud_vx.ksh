@@ -1,10 +1,10 @@
 #!/bin/ksh
-pathnam=/glade/scratch/`whoami`/cloud_vx/xml
-pathroc=/glade/u/home/harrop/opt/rocoto/1.2.4-p1
+pathnam=/glade/p/ral/jntp/CAF/cloud_vx/xml
+pathroc=/glade/p/ral/jntp/tools/rocoto/rocoto-1.3.1
 
-cycle=201811010000
+cycle=202009210000
 
 pwd
 ${pathroc}/bin/rocotostat -w ${pathnam}/cloud_vx.xml -d ${pathnam}/cloud_vx.db -c ${cycle} 
 
-#/glade/u/home/harrop/opt/rocoto/1.2.4-p1/bin/rocotostat -w /glade/scratch/jwolff/CAF/met/draft_3rd/xml/cloud_vx.xml -d /glade/scratch/jwolff/CAF/met/draft_3rd/xml/cloud_vx.db
+#/glade/p/ral/jntp/tools/rocoto/rocoto-1.3.1/bin/rocotostat -w /glade/p/ral/jntp/CAF/cloud_vx/xml/cloud_vx.xml -d /glade/p/ral/jntp/CAF/cloud_vx/xml/cloud_vx.db
